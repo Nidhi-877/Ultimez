@@ -84,13 +84,13 @@ const SignUp = () => {
        
       }
       else{
-        {
+        
             setErrors((prevState) => ({
               ...prevState,
               ...data.message,
             }));
             toast.error("Please fill in all the required fields");
-          }
+          
       }
     } catch (error) {
       console.log(error);
